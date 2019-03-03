@@ -1,0 +1,11 @@
+docker pull centos
+
+
+cd c:/lab11
+docker build -t centos .
+docker container run -it centos
+
+
+
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
